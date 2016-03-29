@@ -53,6 +53,11 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        return true;
+    }
+
     private final class MediaCallback extends MediaRouter.Callback{
         @Override
         public void onRouteSelected(MediaRouter router, MediaRouter.RouteInfo route) {
